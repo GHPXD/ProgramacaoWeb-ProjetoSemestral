@@ -11,7 +11,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url("https://wallpaperaccess.com/full/3167776.jpg");
+    background: linear-gradient(to bottom, #181818, #181818, #181818, #4d4d4d);
 }
 .content {
     background-color: lightgrey;
