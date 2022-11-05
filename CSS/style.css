@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #181818, #4d4d4d);
+    margin: 0px 50px;
+    line-height: 1.4;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    background-color: #181818;
+    color: #dc143d;
+    transition: all 0.5s ease 0s;
+}
+
+.button:hover {
+    background-color: #dc143d;
+    color: #181818;
+
+}
+
+.button_2 {
+    display: block;
+    padding: 10px;
+    background-color: #dc143d;
+    color: #181818;
+    transition: all 0.5s ease 0s;
+}
+
+.button_2:hover {
+    background-color: #00ffff;
+    color: #dc143d;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Header =-=-=-=-=-=-=-=-=-=-=-= */
+.header {
+    background-color: #121010da;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem 0;
+    
+}
+
+.logo {
+    grid-column: 1;
+}
+
+.logo a {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #dc143d;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.logo a:hover {
+    color: #00ffff;
+    transition: all 0.5s ease 0s;
+}
+
+.navigation {
+    grid-column: 2/4;
+    margin-right: 2rem;
+}
+
+.navigation li {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.navigation li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #dc143d;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.navigation li a:hover {
+    color: #00ffff;
+    transition: all 0.5s ease 0s;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Top Container =-=-=-=-=-=-=-=-=-=-=-= */
+.top_container {
+    display: grid;    
+    grid-template-columns: repeat(3, 1f);    
+}
+
+.showcase {    
+    min-height: 400px;
+    background-image: url(../media/slider_3.jpg) ;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: rgb(28, 28, 28);
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.top_box {
+    display: flex;
+    align-items: center;
+    font-weight: 900;    
+    padding: 0 2rem;
+    background-color: #18181850;
+    grid-row: 1;
+}
+
+.top_box_a {
+    grid-column: 1;
+    font-size: 2em;
+}
+
+.top_box_b {
+    grid-column: 3;
+    font-size: 2em;    
+}
+
+.top_box_a:hover, .top_box_b:hover {
+    background-color: #181818a3;
+    transition: all 0.5s ease 0s;
+}
+
+.top_box_c {
+    grid-column: 2;
+    text-align: center;
+    display: grid;
+    grid-row: 1fr 1fr;
+    color: #00ffff;
+    text-transform: uppercase
+}
+
+.top_box_c h1 {
+    font-size: 4rem;
+    align-self: end;
+}
+
+.top_box_c p {
+    font-size: 1rem;
+    align-self: start;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Mid Cards =-=-=-=-=-=-=-=-=-=-=-= */
+.mid_cards {
+    margin: 2rem auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+}
+
+.card {
+    background-color: #dc143d;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: #00ffff;    
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+.card:hover {
+    background-color: #000000;
+    color: #00ffff;    
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.card h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: 00ffff;
+}
+
+.card p{
+    font-size: 1.3rem;
+    color: 00ffff;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Mid Info =-=-=-=-=-=-=-=-=-=-=-= */
+.mid_info {
+    background-color: #0000005a;
+    box-shadow: #00ffff;    
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 3rem;
+}
+
+.info_text {
+    color: #dc143d;
+    display: grid;    
+    align-content: center;
+    grid-gap: 40px;
+    padding: 3rem;
+}
+
+.info_text h2{
+    font-size: 2.5rem;
+}
+
+.info_text p {
+    font-size: 1.5rem;
+    color: #00ffff;
+}
+
+.info_button {
+    font-size: 1.2rem;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Bottom Container =-=-=-=-=-=-=-=-=-=-=-= */
+.botton_container {
+    margin-top: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.box_card {
+    background-color: #00ffff;
+    color: #000000;
+    text-align: center;
+    padding: 1.5rem auto;
+    box-shadow: #181818;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+.box_card:hover {
+    background-color: #000000;
+    color: #00ffff;    
+    cursor: pointer;
+    opacity: 70%;
+
+}
+
+.box_card h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-= Footer =-=-=-=-=-=-=-=-=-=-=-= */
+.footer {
+    background-color: #121010da;
+    color: #dc143d;
+    margin-top: 20px;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-areas: 
+    "footer_myshop footer_help footer_newsletter"
+    "footer_myshop footer_help footer_newsletter"
+    "footer_social footer_social footer_social"
+    "footer_rights footer_rights footer_rights";
+}
+
+.footer_myshop {
+    grid-area: footer_myshop;
+    
+}
+
+.footer_help {
+    grid-area: footer_help;
+}
+
+.footer_social {
+    grid-area: footer_social;
+    text-align: center;    
+}
+
+.footer_social h1 {
+    margin-bottom: 10px;
+}
+
+.footer_rights {
+    text-align: center;
+    grid-area: footer_rights;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #00ffff;
+}
+
+.footer a, .footer li {
+    text-decoration: none;
+    list-style: none;
+    color: #dc143d;
+}
+
+.footer a {
+    transition: all 0.5s ease 0s;
+}
+
+.footer a:hover {
+    color: #00ffff;
+}
+
+.footer li {
+    margin-top: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(auto-fit);
+    font-weight: 900;
+}
+
+.footer_newsletter {
+    grid-area: footer_newsletter;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "fth fth"
+    "ftp ftp"
+    "fti ftb";
+    align-content: flex-start;
+}
+
+.footer_newsletter h1 {
+    grid-area: fth;
+}
+
+.footer_newsletter p {
+    grid-area: ftp;
+    
+}
+
+.footer_newsletter input {
+    grid-area: fti;
+    
+}
+
+.footer_newsletter button {
+    grid-area: ftb;    
+}
