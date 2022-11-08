@@ -105,33 +105,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.social-media {
-    margin: 1rem 0;
-}
-.link-social-media:not(:first-child){
-    margin-left: 10px;
-}
-.link-social-media .item-social-media {
-    transition: background-color .5s;
-}
-.link-social-media:hover .item-social-media{
-    background-color: red;
-    color: white;
-    border-color: black;
-}
-.list-social-media {
-    display: flex;
-    list-style-type: none;
-}
-.item-social-media {
-    border: 1px solid light;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    color: white;
-}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -143,6 +117,7 @@ body {
     border: none;
     background-color: white;
 }
+
 input:-webkit-autofill 
 {    
     -webkit-box-shadow: 0 0 0px 1000px  inset !important;
